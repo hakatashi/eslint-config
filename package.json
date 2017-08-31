@@ -1,8 +1,8 @@
 {
-  "name": "eslint-config-hakatashi",
+  "name": "@hakatashi/eslint-config",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/hakatashi/eslint-config-hakatashi.git",
+  "repository": "https://github.com/hakatashi/eslint-config.git",
   "author": "Koki Takahashi <hakatasiloving@gmail.com>",
   "license": "MIT",
   "devDependencies": {
