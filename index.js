@@ -1,27 +1,3 @@
-let reactInstalled = true;
-
-try {
-	require.resolve('eslint-plugin-react');
-} catch (e) {
-	reactInstalled = false;
-}
-
-let arrayPluralInstalled = true;
-
-try {
-	require.resolve('eslint-plugin-array-plural');
-} catch (e) {
-	arrayPluralInstalled = false;
-}
-
-let babelEslintInstalled = true;
-
-try {
-	require.resolve('babel-eslint');
-} catch (e) {
-	babelEslintInstalled = false;
-}
-
 module.exports = {
 	env: {
 		browser: true,
@@ -34,16 +10,10 @@ module.exports = {
 			jsx: true,
 		},
 	},
-	plugins: [
-		...(reactInstalled ? ['react'] : []),
-		...(arrayPluralInstalled ? ['array-plural'] : []),
-	],
-	parser: babelEslintInstalled ? 'babel-eslint' : undefined,
-	extends: [
-		'eslint:recommended',
-		...(reactInstalled ? ['plugin:react/recommended'] : []),
-	],
-	rules: Object.assign({
+	plugins: ['react', 'array-plural'],
+	parser: 'babel-eslint',
+	extends: ['eslint:recommended', 'plugin:react/recommended'],
+	rules: {
 		'accessor-pairs': 'error',
 		'array-bracket-newline': 'off',
 		'array-bracket-spacing': [
@@ -296,7 +266,7 @@ module.exports = {
 		'no-trailing-spaces': 'error',
 		'no-undef': 'error',
 		'no-undef-init': 'error',
-		'no-undefined': 'off',
+		'no-undefined': 'error',
 		'no-underscore-dangle': ['error', {allowAfterThis: true}],
 		'no-unexpected-multiline': 'error',
 		'no-unmodified-loop-condition': 'error',
@@ -413,7 +383,6 @@ module.exports = {
 		yoda: ['error', 'never', {
 			exceptRange: true,
 		}],
-	}, reactInstalled ? {
 		'react/display-name': 'error',
 		'react/forbid-component-props': 'error',
 		'react/forbid-elements': 'error',
@@ -472,7 +441,6 @@ module.exports = {
 		'react/jsx-uses-react': 'error',
 		'react/jsx-uses-vars': 'error',
 		'react/jsx-wrap-multilines': 'error',
-	} : {}, arrayPluralInstalled ? {
 		'array-plural/array-plural': 'error',
-	} : {}),
+	},
 };
