@@ -11,7 +11,6 @@ module.exports = {
 		},
 	},
 	plugins: ['react', 'array-plural'],
-	parser: 'babel-eslint',
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	rules: {
 		'accessor-pairs': 'error',
