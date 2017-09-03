@@ -21,6 +21,13 @@ for (const rule of rules) {
 	}
 }
 
+for (const rule of Object.keys(config.rules)) {
+	if (!rules.includes(rule)) {
+		process.stdout.write(`ERROR: Config for the rule ${rule} is extraneous.\n`);
+		isError = true;
+	}
+}
+
 if (isError) {
 	throw new Error('One or more errors found');
 }
