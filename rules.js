@@ -66,6 +66,7 @@ module.exports = Object.assign(
 			'never',
 		],
 		'func-style': 'error',
+		'function-paren-newline': ['error', 'consistent'],
 		'generator-star-spacing': [
 			'error',
 			{
