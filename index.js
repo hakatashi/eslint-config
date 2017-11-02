@@ -8,9 +8,12 @@ module.exports = {
 		node: true,
 	},
 	parserOptions: {
+		ecmaVersion: 2017,
 		ecmaFeatures: {
+			experimentalObjectRestSpread: true,
 			jsx: true,
 		},
+		sourceType: 'module',
 	},
 	plugins: ['react', 'array-plural'],
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
