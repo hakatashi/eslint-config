@@ -103,6 +103,10 @@ module.exports = Object.assign(
 		'linebreak-style': 'off',
 		'lines-around-comment': 'error',
 		'lines-around-directive': 'error',
+		'lines-between-class-members': [
+			'error',
+			'always',
+		],
 		'max-depth': 'error',
 		'max-len': [
 			'warn',
@@ -116,6 +120,10 @@ module.exports = Object.assign(
 		],
 		'max-statements': 'off',
 		'max-statements-per-line': 'error',
+		'multiline-comment-style': [
+			'error',
+			'separate-lines',
+		],
 		'multiline-ternary': 'off',
 		'new-cap': [
 			'error',
@@ -391,6 +399,7 @@ module.exports = Object.assign(
 		'react/jsx-boolean-value': ['error', 'never'],
 		'react/jsx-closing-bracket-location': 'error',
 		'react/jsx-closing-tag-location': 'error',
+		'react/jsx-curly-brace-presence': ['error', 'never'],
 		'react/jsx-curly-spacing': 'error',
 		'react/jsx-equals-spacing': 'error',
 		'react/jsx-filename-extension': 'error',
