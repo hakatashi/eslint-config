@@ -15,7 +15,7 @@ module.exports = {
 		},
 		sourceType: 'module',
 	},
-	plugins: ['react', 'array-plural'],
+	plugins: ['react', 'array-plural', 'private-props'],
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	rules,
 };

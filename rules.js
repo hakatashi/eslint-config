@@ -466,5 +466,12 @@ module.exports = Object.assign(
 
 	{
 		'array-plural/array-plural': 'error',
+	},
+
+	// eslint-plugin-private-props
+
+	{
+		'private-props/no-unused-or-undeclared': 'error',
+		'private-props/no-use-outside': 'error',
 	}
 );

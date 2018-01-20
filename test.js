@@ -3,6 +3,7 @@ const eslint = require('eslint');
 
 const react = require('eslint-plugin-react');
 const arrayPlural = require('eslint-plugin-array-plural');
+const privateProps = require('eslint-plugin-private-props');
 
 const linter = new eslint.Linter();
 
@@ -10,6 +11,7 @@ const rules = [
 	...linter.getRules().keys(),
 	...Object.keys(react.rules).map((rule) => `react/${rule}`),
 	...Object.keys(arrayPlural.rules).map((rule) => `array-plural/${rule}`),
+	...Object.keys(privateProps.rules).map((rule) => `private-props/${rule}`),
 ];
 
 let isError = false;
