@@ -29,7 +29,7 @@ module.exports = Object.assign(
 		],
 		'brace-style': 'error',
 		'callback-return': 'error',
-		camelcase: 'error',
+		camelcase: ['error', {properties: 'never'}],
 		'capitalized-comments': 'off',
 		'class-methods-use-this': 'off',
 		'comma-dangle': [
@@ -81,6 +81,7 @@ module.exports = Object.assign(
 		'id-blacklist': 'error',
 		'id-length': 'off',
 		'id-match': 'error',
+		'implicit-arrow-linebreak': 'error',
 		indent: [
 			'error',
 			'tab',
@@ -110,7 +111,7 @@ module.exports = Object.assign(
 		'max-depth': 'error',
 		'max-len': [
 			'warn',
-			100,
+			200,
 		],
 		'max-lines': 'off',
 		'max-nested-callbacks': 'error',
@@ -390,7 +391,9 @@ module.exports = Object.assign(
 
 	{
 		'react/boolean-prop-naming': 'off',
+		'react/button-has-type': 'error',
 		'react/default-props-match-prop-types': 'error',
+		'react/destructuring-assignment': 'off',
 		'react/display-name': 'error',
 		'react/forbid-component-props': 'error',
 		'react/forbid-elements': 'error',
@@ -415,6 +418,7 @@ module.exports = Object.assign(
 		'react/jsx-no-literals': 'off',
 		'react/jsx-no-target-blank': 'error',
 		'react/jsx-no-undef': 'error',
+		'react/jsx-one-expression-per-line': 'off',
 		'react/jsx-pascal-case': 'error',
 		'react/jsx-sort-props': 'off',
 		'react/jsx-space-before-closing': 'off', // deprecated
@@ -422,6 +426,7 @@ module.exports = Object.assign(
 		'react/jsx-uses-react': 'error',
 		'react/jsx-uses-vars': 'error',
 		'react/jsx-wrap-multilines': 'error',
+		'react/no-access-state-in-setstate': 'error',
 		'react/no-array-index-key': 'off',
 		'react/no-children-prop': 'error',
 		'react/no-danger': 'error',
@@ -432,7 +437,7 @@ module.exports = Object.assign(
 		'react/no-direct-mutation-state': 'error',
 		'react/no-find-dom-node': 'error',
 		'react/no-is-mounted': 'error',
-		'react/no-multi-comp': 'error',
+		'react/no-multi-comp': ['error', {ignoreStateless: true}],
 		'react/no-redundant-should-component-update': 'error',
 		'react/no-render-return-value': 'error',
 		'react/no-set-state': 'off',
