@@ -5,6 +5,7 @@ const react = require('eslint-plugin-react');
 const arrayPlural = require('eslint-plugin-array-plural');
 const privateProps = require('eslint-plugin-private-props');
 const mysticatea = require('eslint-plugin-mysticatea');
+const node = require('eslint-plugin-node');
 
 const linter = new eslint.Linter();
 
@@ -14,6 +15,7 @@ const rules = [
 	...Object.keys(arrayPlural.rules).map((rule) => `array-plural/${rule}`),
 	...Object.keys(privateProps.rules).map((rule) => `private-props/${rule}`),
 	...Object.keys(mysticatea.rules).map((rule) => `mysticatea/${rule}`),
+	...Object.keys(node.rules).map((rule) => `node/${rule}`),
 ];
 
 let isError = false;
