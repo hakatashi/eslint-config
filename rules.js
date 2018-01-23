@@ -470,5 +470,19 @@ module.exports = Object.assign(
 	{
 		'private-props/no-unused-or-undeclared': 'error',
 		'private-props/no-use-outside': 'error',
+	},
+
+	// eslint-plugin-mysticatea
+
+	{
+		'mysticatea/arrow-parens': 'off',
+		'mysticatea/block-scoped-var': 'off',
+		'mysticatea/no-instanceof-array': 'error',
+		'mysticatea/no-instanceof-wrapper': 'error',
+		'mysticatea/no-literal-call': 'error',
+		'mysticatea/no-this-in-static': 'error',
+		'mysticatea/no-use-ignored-vars': 'off',
+		'mysticatea/no-useless-rest-spread': 'off',
+		'mysticatea/prefer-for-of': 'error',
 	}
 );
