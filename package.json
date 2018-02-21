@@ -6,7 +6,7 @@
   "author": "Koki Takahashi <hakatasiloving@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.5.0"
+    "eslint": "^4.18.1"
   },
   "engines": {
     "node": ">=6.0.0"
@@ -16,7 +16,7 @@
     "eslint-plugin-mysticatea": "^4.2.4",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-private-props": "^0.3.0",
-    "eslint-plugin-react": "^7.3.0"
+    "eslint-plugin-react": "^7.7.0"
   },
   "scripts": {
     "lint": "eslint .",
