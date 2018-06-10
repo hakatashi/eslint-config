@@ -108,10 +108,10 @@ module.exports = Object.assign(
 			'error',
 			'always',
 		],
-		'max-depth': 'error',
+		'max-depth': 'off',
 		'max-len': [
 			'warn',
-			200,
+			300,
 		],
 		'max-lines': 'off',
 		'max-nested-callbacks': 'error',
@@ -420,6 +420,7 @@ module.exports = Object.assign(
 		'react/jsx-no-undef': 'error',
 		'react/jsx-one-expression-per-line': 'off',
 		'react/jsx-pascal-case': 'error',
+		'react/jsx-props-no-multi-spaces': 'error',
 		'react/jsx-sort-default-props': 'off',
 		'react/jsx-sort-props': 'off',
 		'react/jsx-space-before-closing': 'off', // deprecated
