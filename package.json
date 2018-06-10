@@ -6,17 +6,17 @@
   "author": "Koki Takahashi <hakatasiloving@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.18.1"
+    "eslint": "^4.19.1"
   },
   "engines": {
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "eslint-plugin-array-plural": "^1.0.0",
+    "eslint-plugin-array-plural": "^1.1.0",
     "eslint-plugin-mysticatea": "^4.2.4",
-    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-private-props": "^0.3.0",
-    "eslint-plugin-react": "^7.7.0"
+    "eslint-plugin-react": "^7.9.1"
   },
   "scripts": {
     "lint": "eslint .",
