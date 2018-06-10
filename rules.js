@@ -115,7 +115,7 @@ module.exports = Object.assign(
 				code: 150,
 				comments: 150,
 				ignoreComments: true,
-				ignorePattern: true,
+				ignorePattern: undefined,
 				ignoreRegExpLiterals: true,
 				ignoreStrings: true,
 				ignoreTemplateLiterals: true,
