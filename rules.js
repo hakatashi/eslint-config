@@ -1,7 +1,7 @@
 /* eslint sort-keys: "error" */
 
-module.exports = Object.assign(
-	{
+module.exports = {
+	...{
 		'accessor-pairs': 'error',
 		'array-bracket-newline': 'off',
 		'array-bracket-spacing': [
@@ -400,7 +400,7 @@ module.exports = Object.assign(
 
 	// eslint-plugin-react
 
-	{
+	...{
 		'react/boolean-prop-naming': 'off',
 		'react/button-has-type': 'error',
 		'react/default-props-match-prop-types': 'error',
@@ -481,20 +481,20 @@ module.exports = Object.assign(
 
 	// eslint-plugin-array-plural
 
-	{
+	...{
 		'array-plural/array-plural': 'error',
 	},
 
 	// eslint-plugin-private-props
 
-	{
+	...{
 		'private-props/no-unused-or-undeclared': 'error',
 		'private-props/no-use-outside': 'error',
 	},
 
 	// eslint-plugin-mysticatea
 
-	{
+	...{
 		'mysticatea/arrow-parens': 'off',
 		'mysticatea/block-scoped-var': 'off',
 		'mysticatea/no-instanceof-array': 'error',
@@ -508,7 +508,7 @@ module.exports = Object.assign(
 
 	// eslint-plugin-node
 
-	{
+	...{
 		'node/exports-style': ['error', 'module.exports'],
 		'node/no-deprecated-api': 'error',
 		'node/no-extraneous-import': 'off',
@@ -522,5 +522,5 @@ module.exports = Object.assign(
 		'node/no-unsupported-features': 'error',
 		'node/process-exit-as-throw': 'error',
 		'node/shebang': 'error',
-	}
-);
+	},
+};
