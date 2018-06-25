@@ -108,6 +108,7 @@ module.exports = Object.assign(
 			'error',
 			'always',
 		],
+		'max-classes-per-file': 'off',
 		'max-depth': 'off',
 		'max-len': [
 			'warn',
@@ -125,6 +126,7 @@ module.exports = Object.assign(
 			},
 		],
 		'max-lines': 'off',
+		'max-lines-per-function': 'off',
 		'max-nested-callbacks': 'error',
 		'max-params': [
 			'warn',
@@ -329,6 +331,7 @@ module.exports = Object.assign(
 			object: true,
 		}],
 		'prefer-numeric-literals': 'error',
+		'prefer-object-spread': 'error',
 		'prefer-promise-reject-errors': 'error',
 		'prefer-reflect': 'off',
 		'prefer-rest-params': 'warn',
