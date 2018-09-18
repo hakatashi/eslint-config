@@ -15,6 +15,6 @@ module.exports = {
 		sourceType: 'module',
 	},
 	plugins: ['react', 'array-plural', 'private-props', 'mysticatea', 'node', 'vue'],
-	extends: ['eslint:recommended', 'plugin:react/recommended'],
+	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:vue/recommended'],
 	rules,
 };
