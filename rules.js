@@ -545,7 +545,11 @@ module.exports = {
 		'vue/comment-directive': 'error',
 		'vue/component-name-in-template-casing': ['error', 'kebab-case'],
 		'vue/html-closing-bracket-newline': 'error',
-		'vue/html-closing-bracket-spacing': 'error',
+		'vue/html-closing-bracket-spacing': ['error', {
+			endTag: 'never',
+			selfClosingTag: 'never',
+			startTag: 'never',
+		}],
 		'vue/html-end-tags': 'error',
 		'vue/html-indent': ['error', 'tab'],
 		'vue/html-quotes': 'error',
