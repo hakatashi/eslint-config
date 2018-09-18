@@ -6,6 +6,7 @@ const arrayPlural = require('eslint-plugin-array-plural');
 const privateProps = require('eslint-plugin-private-props');
 const mysticatea = require('eslint-plugin-mysticatea');
 const node = require('eslint-plugin-node');
+const vue = require('eslint-plugin-vue');
 
 const linter = new eslint.Linter();
 
@@ -16,6 +17,7 @@ const rules = [
 	...Object.keys(privateProps.rules).map((rule) => `private-props/${rule}`),
 	...Object.keys(mysticatea.rules).map((rule) => `mysticatea/${rule}`),
 	...Object.keys(node.rules).map((rule) => `node/${rule}`),
+	...Object.keys(vue.rules).map((rule) => `vue/${rule}`),
 ];
 
 let isError = false;
