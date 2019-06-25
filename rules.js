@@ -27,9 +27,15 @@ module.exports = {
 			'error',
 			'never',
 		],
-		'brace-style': 'error',
+		'brace-style': ['error', '1tbs'],
 		'callback-return': 'error',
-		camelcase: ['error', {properties: 'never'}],
+		camelcase: [
+			'error',
+			{
+				ignoreDestructuring: true,
+				properties: 'never',
+			},
+		],
 		'capitalized-comments': 'off',
 		'class-methods-use-this': 'off',
 		'comma-dangle': [
@@ -57,7 +63,7 @@ module.exports = {
 		],
 		'dot-notation': 'error',
 		'eol-last': 'error',
-		eqeqeq: 'error',
+		eqeqeq: ['error', 'always'],
 		'for-direction': 'error',
 		'func-call-spacing': 'error',
 		'func-name-matching': 'error',
@@ -293,6 +299,7 @@ module.exports = {
 		'no-unused-vars': 'error',
 		'no-use-before-define': 'error',
 		'no-useless-call': 'error',
+		'no-useless-catch': 'error',
 		'no-useless-computed-key': 'error',
 		'no-useless-concat': 'error',
 		'no-useless-constructor': 'error',
@@ -424,7 +431,8 @@ module.exports = {
 		'react/jsx-equals-spacing': 'error',
 		'react/jsx-filename-extension': 'error',
 		'react/jsx-first-prop-new-line': 'error',
-		'react/jsx-handler-names': 'error',
+		'react/jsx-fragments': 'error',
+		'react/jsx-handler-names': ['error', 'syntax'],
 		'react/jsx-indent': ['error', 'tab'],
 		'react/jsx-indent-props': ['error', 'tab'],
 		'react/jsx-key': 'error',
@@ -542,10 +550,35 @@ module.exports = {
 	// eslint-plugin-vue
 
 	...{
+		'vue/array-bracket-spacing': ['error', 'never'],
+		'vue/arrow-spacing': [
+			'error',
+			{
+				after: true,
+				before: true,
+			},
+		],
 		'vue/attribute-hyphenation': 'error',
 		'vue/attributes-order': 'error',
+		'vue/block-spacing': [
+			'error',
+			'never',
+		],
+		'vue/brace-style': ['error', '1tbs'],
+		'vue/camelcase': [
+			'error',
+			{
+				ignoreDestructuring: true,
+				properties: 'never',
+			},
+		],
+		'vue/comma-dangle': [
+			'error',
+			'always-multiline',
+		],
 		'vue/comment-directive': 'error',
 		'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+		'vue/eqeqeq': ['error', 'always'],
 		'vue/html-closing-bracket-newline': 'error',
 		'vue/html-closing-bracket-spacing': ['error', {
 			endTag: 'never',
