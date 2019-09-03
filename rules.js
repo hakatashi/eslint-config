@@ -72,6 +72,7 @@ module.exports = {
 			'never',
 		],
 		'func-style': 'error',
+		'function-call-argument-newline': 'off',
 		'function-paren-newline': ['error', 'consistent'],
 		'generator-star-spacing': [
 			'error',
@@ -530,6 +531,7 @@ module.exports = {
 	...{
 		'node/exports-style': ['error', 'module.exports'],
 		'node/file-extension-in-import': ['error', 'always'],
+		'node/no-callback-literal': 'off',
 		'node/no-deprecated-api': 'error',
 		'node/no-extraneous-import': 'off',
 		'node/no-extraneous-require': 'error',
