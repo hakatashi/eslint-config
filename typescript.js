@@ -1,5 +1,7 @@
 const rules = require('./rules.js');
 
+const plugins = ['react', 'array-plural', 'private-props', 'mysticatea', 'node'];
+
 module.exports = {
 	env: {
 		browser: true,
@@ -10,11 +12,15 @@ module.exports = {
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		extraFileExtensions: ['.vue'],
+		ecmaVersion: 2020,
+		sourceType: 'module',
 	},
-	plugins: ['react', 'array-plural', 'private-props', 'mysticatea', 'node'],
+	plugins,
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
 	rules: {
-		...rules,
+		...Object.assign({}, ...Object.keys(rules).filter((rule) => (
+			!rule.includes('/') || plugins.includes(rule.split('/')[0])
+		)).map((key) => ({[key]: rules[key]}))),
 		'node/file-extension-in-import': 'off',
 	},
 };
