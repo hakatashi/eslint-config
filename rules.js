@@ -337,8 +337,16 @@ module.exports = {
 		'prefer-arrow-callback': 'error',
 		'prefer-const': 'error',
 		'prefer-destructuring': ['error', {
-			array: false,
-			object: true,
+			AssignmentExpression: {
+				array: true,
+				object: false,
+			},
+			VariableDeclarator: {
+				array: true,
+				object: true,
+			},
+		}, {
+			enforceForRenamedProperties: false,
 		}],
 		'prefer-named-capture-group': 'error',
 		'prefer-numeric-literals': 'error',
@@ -541,10 +549,10 @@ module.exports = {
 		'node/no-unpublished-bin': 'error',
 		'node/no-unpublished-import': 'off',
 		'node/no-unpublished-require': 'off',
-		'node/no-unsupported-features': 'error',
-		'node/no-unsupported-features/es-builtins': 'error',
-		'node/no-unsupported-features/es-syntax': 'error',
-		'node/no-unsupported-features/node-builtins': 'error',
+		'node/no-unsupported-features': 'off',
+		'node/no-unsupported-features/es-builtins': 'off',
+		'node/no-unsupported-features/es-syntax': 'off',
+		'node/no-unsupported-features/node-builtins': 'off',
 		'node/prefer-global/buffer': 'error',
 		'node/prefer-global/console': 'error',
 		'node/prefer-global/process': 'error',

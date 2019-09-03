@@ -13,5 +13,8 @@ module.exports = {
 	},
 	plugins: ['react', 'array-plural', 'private-props', 'mysticatea', 'node'],
 	extends: ['eslint:recommended', 'plugin:react/recommended'],
-	rules,
+	rules: {
+		...rules,
+		'node/file-extension-in-import': 'off',
+	},
 };
