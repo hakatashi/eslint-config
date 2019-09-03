@@ -19,3 +19,11 @@ Your `.eslintrc`:
 	"extends": "@hakatashi"
 }
 ```
+
+Or for typescript:
+
+```json
+{
+	"extends": "@hakatashi/eslint-config/typescript"
+}
+```
