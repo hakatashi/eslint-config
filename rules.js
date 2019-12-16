@@ -179,7 +179,7 @@ module.exports = {
 		'no-dupe-class-members': 'error',
 		'no-dupe-keys': 'error',
 		'no-duplicate-case': 'error',
-		'no-duplicate-imports': 'error',
+		'no-duplicate-imports': 'off', // => eslint-plugin-import
 		'no-else-return': 'error',
 		'no-empty': 'error',
 		'no-empty-character-class': 'error',
@@ -377,7 +377,7 @@ module.exports = {
 		semi: 'error',
 		'semi-spacing': 'error',
 		'semi-style': ['error', 'last'],
-		'sort-imports': 'error',
+		'sort-imports': 'off', // => eslint-plugin-import
 		'sort-keys': 'off',
 		'sort-vars': 'error',
 		'space-before-blocks': 'error',
@@ -538,16 +538,16 @@ module.exports = {
 
 	...{
 		'node/exports-style': ['error', 'module.exports'],
-		'node/file-extension-in-import': ['error', 'always'],
+		'node/file-extension-in-import': 'off', // => eslint-plugin-import
 		'node/no-callback-literal': 'off',
 		'node/no-deprecated-api': 'error',
-		'node/no-extraneous-import': 'off',
+		'node/no-extraneous-import': 'off', // => eslint-plugin-import
 		'node/no-extraneous-require': 'error',
 		'node/no-hide-core-modules': 'off',
-		'node/no-missing-import': 'off',
+		'node/no-missing-import': 'off', // => eslint-plugin-import
 		'node/no-missing-require': 'error',
 		'node/no-unpublished-bin': 'error',
-		'node/no-unpublished-import': 'off',
+		'node/no-unpublished-import': 'off', // => eslint-plugin-import
 		'node/no-unpublished-require': 'off',
 		'node/no-unsupported-features': 'off',
 		'node/no-unsupported-features/es-builtins': 'off',
@@ -682,5 +682,53 @@ module.exports = {
 		'vue/valid-v-pre': 'error',
 		'vue/valid-v-show': 'error',
 		'vue/valid-v-text': 'error',
+	},
+
+	// import
+
+	...{
+		'import/default': 'error',
+		'import/dynamic-import-chunkname': 'off',
+		'import/export': 'error',
+		'import/exports-last': 'off',
+		'import/extensions': ['error', 'always'],
+		'import/first': 'error',
+		'import/group-exports': 'off',
+		'import/imports-first': 'error',
+		'import/max-dependencies': 'off',
+		'import/named': 'error',
+		'import/namespace': 'off',
+		'import/newline-after-import': 'error',
+		'import/no-absolute-path': 'error',
+		'import/no-amd': 'error',
+		'import/no-anonymous-default-export': 'off',
+		'import/no-commonjs': 'off',
+		'import/no-cycle': 'error',
+		'import/no-default-export': 'off',
+		'import/no-deprecated': 'error',
+		'import/no-duplicates': 'error',
+		'import/no-dynamic-require': 'off',
+		'import/no-extraneous-dependencies': 'error',
+		'import/no-internal-modules': 'off',
+		'import/no-mutable-exports': 'error',
+		'import/no-named-as-default': 'error',
+		'import/no-named-as-default-member': 'error',
+		'import/no-named-default': 'error',
+		'import/no-named-export': 'off',
+		'import/no-namespace': 'error',
+		'import/no-nodejs-modules': 'off',
+		'import/no-relative-parent-imports': 'off',
+		'import/no-restricted-paths': 'off',
+		'import/no-self-import': 'error',
+		'import/no-unassigned-import': 'off',
+		'import/no-unresolved': 'error',
+		'import/no-unused-modules': 'off',
+		'import/no-useless-path-segments': 'error',
+		'import/no-webpack-loader-syntax': 'off',
+		'import/order': ['error', {
+			alphabetize: 'asc',
+		}],
+		'import/prefer-default-export': 'error',
+		'import/unambiguous': 'off',
 	},
 };

@@ -7,6 +7,7 @@ const privateProps = require('eslint-plugin-private-props');
 const mysticatea = require('eslint-plugin-mysticatea');
 const node = require('eslint-plugin-node');
 const vue = require('eslint-plugin-vue');
+const importPlugin = require('eslint-plugin-import');
 
 const linter = new eslint.Linter();
 
@@ -18,6 +19,7 @@ const rules = [
 	...Object.keys(mysticatea.rules).map((rule) => `mysticatea/${rule}`),
 	...Object.keys(node.rules).map((rule) => `node/${rule}`),
 	...Object.keys(vue.rules).map((rule) => `vue/${rule}`),
+	...Object.keys(importPlugin.rules).map((rule) => `import/${rule}`),
 ];
 
 let isError = false;
