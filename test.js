@@ -1,13 +1,13 @@
-const config = require('./');
 const eslint = require('eslint');
 
-const react = require('eslint-plugin-react');
 const arrayPlural = require('eslint-plugin-array-plural');
-const privateProps = require('eslint-plugin-private-props');
+const importPlugin = require('eslint-plugin-import');
 const mysticatea = require('eslint-plugin-mysticatea');
 const node = require('eslint-plugin-node');
+const privateProps = require('eslint-plugin-private-props');
+const react = require('eslint-plugin-react');
 const vue = require('eslint-plugin-vue');
-const importPlugin = require('eslint-plugin-import');
+const config = require('./');
 
 const linter = new eslint.Linter();
 

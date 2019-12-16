@@ -751,7 +751,9 @@ module.exports = {
 		'import/no-useless-path-segments': 'error',
 		'import/no-webpack-loader-syntax': 'off',
 		'import/order': ['error', {
-			alphabetize: 'asc',
+			alphabetize: {
+				order: 'asc',
+			},
 		}],
 		'import/prefer-default-export': 'error',
 		'import/unambiguous': 'off',
