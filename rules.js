@@ -57,6 +57,7 @@ module.exports = {
 		'constructor-super': 'error',
 		curly: 'error',
 		'default-case': 'off',
+		'default-param-last': 'error',
 		'dot-location': [
 			'error',
 			'property',
@@ -83,6 +84,7 @@ module.exports = {
 		],
 		'getter-return': 'error',
 		'global-require': 'error',
+		'grouped-accessor-pairs': ['error', 'getBeforeSet'],
 		'guard-for-in': 'warn',
 		'handle-callback-err': 'error',
 		'id-blacklist': 'error',
@@ -170,6 +172,7 @@ module.exports = {
 			'error',
 			{checkLoops: false},
 		],
+		'no-constructor-return': 'error',
 		'no-continue': 'off',
 		'no-control-regex': 'off',
 		'no-debugger': 'error',
@@ -177,6 +180,7 @@ module.exports = {
 		'no-div-regex': 'error',
 		'no-dupe-args': 'error',
 		'no-dupe-class-members': 'error',
+		'no-dupe-else-if': 'error',
 		'no-dupe-keys': 'error',
 		'no-duplicate-case': 'error',
 		'no-duplicate-imports': 'off', // => eslint-plugin-import
@@ -201,6 +205,7 @@ module.exports = {
 		'no-implicit-coercion': 'error',
 		'no-implicit-globals': 'error',
 		'no-implied-eval': 'error',
+		'no-import-assign': 'error',
 		'no-inline-comments': 'off',
 		'no-inner-declarations': [
 			'error',
@@ -274,6 +279,7 @@ module.exports = {
 		'no-self-assign': 'error',
 		'no-self-compare': 'error',
 		'no-sequences': 'error',
+		'no-setter-return': 'error',
 		'no-shadow': ['error', {allow: ['_', 'resolve', 'reject']}],
 		'no-shadow-restricted-names': 'error',
 		'no-spaced-func': 'error',
@@ -348,11 +354,13 @@ module.exports = {
 		}, {
 			enforceForRenamedProperties: false,
 		}],
+		'prefer-exponentiation-operator': 'error',
 		'prefer-named-capture-group': 'error',
 		'prefer-numeric-literals': 'error',
 		'prefer-object-spread': 'error',
 		'prefer-promise-reject-errors': 'error',
 		'prefer-reflect': 'off',
+		'prefer-regex-literals': 'error',
 		'prefer-rest-params': 'warn',
 		'prefer-spread': 'error',
 		'prefer-template': 'error',
@@ -455,6 +463,7 @@ module.exports = {
 		'react/jsx-no-literals': 'off',
 		'react/jsx-no-target-blank': 'error',
 		'react/jsx-no-undef': 'error',
+		'react/jsx-no-useless-fragment': 'error',
 		'react/jsx-one-expression-per-line': 'off',
 		'react/jsx-pascal-case': 'error',
 		'react/jsx-props-no-multi-spaces': 'error',
@@ -541,6 +550,7 @@ module.exports = {
 		'node/file-extension-in-import': 'off', // => eslint-plugin-import
 		'node/no-callback-literal': 'off',
 		'node/no-deprecated-api': 'error',
+		'node/no-exports-assign': 'error',
 		'node/no-extraneous-import': 'off', // => eslint-plugin-import
 		'node/no-extraneous-require': 'error',
 		'node/no-hide-core-modules': 'off',
@@ -597,6 +607,10 @@ module.exports = {
 		],
 		'vue/comment-directive': 'error',
 		'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+		'vue/dot-location': [
+			'error',
+			'property',
+		],
 		'vue/eqeqeq': ['error', 'always'],
 		'vue/html-closing-bracket-newline': 'error',
 		'vue/html-closing-bracket-spacing': ['error', {
@@ -610,6 +624,13 @@ module.exports = {
 		'vue/html-self-closing': 'error',
 		'vue/jsx-uses-vars': 'error',
 		'vue/key-spacing': 'error',
+		'vue/keyword-spacing': [
+			'error',
+			{
+				after: true,
+				before: true,
+			},
+		],
 		'vue/match-component-file-name': 'off',
 		'vue/max-attributes-per-line': ['error', {
 			multiline: {
@@ -624,8 +645,10 @@ module.exports = {
 		'vue/no-async-in-computed-properties': 'error',
 		'vue/no-boolean-default': ['error', 'default-false'],
 		'vue/no-confusing-v-for-v-if': 'off',
+		'vue/no-deprecated-scope-attribute': 'error',
 		'vue/no-dupe-keys': 'error',
 		'vue/no-duplicate-attributes': 'error',
+		'vue/no-empty-pattern': 'error',
 		'vue/no-multi-spaces': 'error',
 		'vue/no-parsing-error': 'error',
 		'vue/no-reserved-keys': 'error',
@@ -668,6 +691,7 @@ module.exports = {
 		'vue/v-bind-style': 'error',
 		'vue/v-on-function-call': ['error', 'never'],
 		'vue/v-on-style': 'error',
+		'vue/v-slot-style': 'error',
 		'vue/valid-template-root': 'error',
 		'vue/valid-v-bind': 'error',
 		'vue/valid-v-cloak': 'error',
@@ -681,6 +705,7 @@ module.exports = {
 		'vue/valid-v-once': 'error',
 		'vue/valid-v-pre': 'error',
 		'vue/valid-v-show': 'error',
+		'vue/valid-v-slot': 'error',
 		'vue/valid-v-text': 'error',
 	},
 
