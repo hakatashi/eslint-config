@@ -519,7 +519,9 @@ module.exports = {
 	// eslint-plugin-array-plural
 
 	...{
-		'array-plural/array-plural': 'error',
+		'array-plural/array-plural': ['error', {
+			allows: ['array', 'list', 'group', 'table'],
+		}],
 	},
 
 	// eslint-plugin-private-props
