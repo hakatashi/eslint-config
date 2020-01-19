@@ -23,4 +23,10 @@ module.exports = {
 		)).map((key) => ({[key]: rules[key]}))),
 		'node/file-extension-in-import': 'off',
 	},
+	settings: {
+		'import/parsers': {
+			'@typescript-eslint/parser': ['.ts', '.tsx'],
+		},
+		'import/resolver': 'typescript',
+	},
 };
