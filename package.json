@@ -6,22 +6,22 @@
   "author": "Koki Takahashi <hakatasiloving@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^7.11.0"
   },
   "engines": {
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^2.25.0",
-    "eslint-import-resolver-typescript": "^2.0.0",
+    "@typescript-eslint/parser": "^4.4.1",
+    "eslint-import-resolver-typescript": "^2.3.0",
     "eslint-plugin-array-plural": "^1.2.0",
-    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-mysticatea": "^4.2.4",
-    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-private-props": "^0.3.0",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "snyk": "^1.316.1"
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-vue": "^7.0.1",
+    "snyk": "^1.414.1"
   },
   "scripts": {
     "lint": "eslint .",
