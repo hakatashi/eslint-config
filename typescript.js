@@ -22,6 +22,9 @@ module.exports = {
 			!rule.includes('/') || plugins.includes(rule.split('/')[0])
 		)).map((key) => ({[key]: rules[key]}))),
 		'node/file-extension-in-import': 'off',
+		'import/named': 'off',
+		'import/extensions': 'off',
+		'no-restricted-imports': 'off',
 	},
 	settings: {
 		'import/parsers': {
