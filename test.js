@@ -1,4 +1,3 @@
-const config = require('./');
 const eslint = require('eslint');
 
 const arrayPlural = require('eslint-plugin-array-plural');
@@ -8,6 +7,8 @@ const node = require('eslint-plugin-node');
 const privateProps = require('eslint-plugin-private-props');
 const react = require('eslint-plugin-react');
 const vue = require('eslint-plugin-vue');
+
+const config = require('./');
 
 const linter = new eslint.Linter();
 
