@@ -1,6 +1,7 @@
 const rules = require('./rules.js');
 
 module.exports = {
+	parser: 'vue-eslint-parser',
 	env: {
 		browser: true,
 		commonjs: true,
