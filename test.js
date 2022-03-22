@@ -24,9 +24,11 @@ const rules = [
 ];
 
 let isError = false;
+const missingRules = [];
 
 for (const [name, rule] of rules) {
 	if (config.rules[name] === undefined) {
+		missingRules.push(name);
 		process.stdout.write(`ERROR: Config for the rule ${name} is missing. Doc: ${rule.meta.docs.url}\n`);
 		isError = true;
 	}
@@ -37,6 +39,15 @@ for (const rule of Object.keys(config.rules)) {
 		process.stdout.write(`ERROR: Config for the rule ${rule} is extraneous.\n`);
 		isError = true;
 	}
+}
+
+if (missingRules.length > 0) {
+	console.log('Configuration for missing rules:');
+	console.log('{');
+	for (const rule of missingRules) {
+		console.log(`\t'${rule}': 'error',`);
+	}
+	console.log('}');
 }
 
 if (isError) {
