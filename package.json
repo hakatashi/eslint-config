@@ -12,11 +12,11 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
+    "@mysticatea/eslint-plugin": "^13.0.0",
     "@typescript-eslint/parser": "^5.10.1",
     "eslint-import-resolver-typescript": "^2.3.0",
     "eslint-plugin-array-plural": "^1.2.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-mysticatea": "^4.2.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-private-props": "^0.3.0",
     "eslint-plugin-react": "^7.22.0",
