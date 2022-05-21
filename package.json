@@ -23,7 +23,7 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-vue": "^8.4.0",
     "snyk": "^1.437.4",
-    "vue-eslint-parser": "^8.2.0"
+    "vue-eslint-parser": "^9.0.1"
   },
   "scripts": {
     "lint": "eslint .",
