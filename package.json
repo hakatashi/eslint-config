@@ -12,7 +12,6 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@mysticatea/eslint-plugin": "^13.0.0",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.10.1",
     "eslint-import-resolver-typescript": "^2.3.0",

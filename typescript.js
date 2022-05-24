@@ -1,6 +1,6 @@
 const rules = require('./rules.js');
 
-const plugins = ['react', 'array-plural', 'private-props', '@mysticatea', 'node', 'import', '@typescript-eslint'];
+const plugins = ['react', 'array-plural', 'private-props', 'node', 'import', '@typescript-eslint'];
 
 module.exports = {
 	env: {
