@@ -26,9 +26,13 @@ module.exports = {
 		'import/extensions': 'off',
 		'no-restricted-imports': 'off',
 
-		// https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-use-before-define.md#how-to-use
+		// https://typescript-eslint.io/rules/no-use-before-define#how-to-use
 		'no-use-before-define': 'off',
-		'@typescript-eslint/no-use-before-define': ['error'],
+		'@typescript-eslint/no-use-before-define': 'error',
+
+		// https://typescript-eslint.io/rules/no-unused-vars/#options
+		'no-unused-vars': 'off',
+		'@typescript-eslint/no-unused-vars': 'error',
 	},
 	settings: {
 		'import/parsers': {
