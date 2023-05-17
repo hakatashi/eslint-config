@@ -5,6 +5,7 @@ const importPlugin = require('eslint-plugin-import');
 const node = require('eslint-plugin-node');
 const privateProps = require('eslint-plugin-private-props');
 const react = require('eslint-plugin-react');
+const sortKeysFix = require('eslint-plugin-sort-keys-fix');
 const vue = require('eslint-plugin-vue');
 
 const config = require('./');
@@ -19,6 +20,7 @@ const rules = [
 	...Object.entries(node.rules).map(([name, rule]) => [`node/${name}`, rule]),
 	...Object.entries(vue.rules).map(([name, rule]) => [`vue/${name}`, rule]),
 	...Object.entries(importPlugin.rules).map(([name, rule]) => [`import/${name}`, rule]),
+	...Object.entries(sortKeysFix.rules).map(([name, rule]) => [`sort-keys-fix/${name}`, rule]),
 ];
 
 let isError = false;

@@ -15,7 +15,7 @@ module.exports = {
 		},
 		sourceType: 'module',
 	},
-	plugins: ['react', 'array-plural', 'private-props', 'node', 'vue', 'import'],
+	plugins: ['react', 'array-plural', 'private-props', 'node', 'vue', 'import', 'sort-keys-fix'],
 	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:vue/recommended'],
 	rules,
 };

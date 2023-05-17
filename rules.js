@@ -1,4 +1,4 @@
-/* eslint sort-keys: "error" */
+/* eslint sort-keys: "off", sort-keys-fix/sort-keys-fix: "error" */
 
 const baseConfig = {
 	'accessor-pairs': 'error',
@@ -480,6 +480,7 @@ module.exports = {
 		'react/jsx-no-comment-textnodes': 'error',
 		'react/jsx-no-constructed-context-values': 'off',
 		'react/jsx-no-duplicate-props': 'error',
+		'react/jsx-no-leaked-render': 'error',
 		'react/jsx-no-literals': 'off',
 		'react/jsx-no-script-url': 'error',
 		'react/jsx-no-target-blank': 'error',
@@ -512,6 +513,7 @@ module.exports = {
 		'react/no-is-mounted': 'error',
 		'react/no-multi-comp': ['error', {ignoreStateless: true}],
 		'react/no-namespace': 'error',
+		'react/no-object-type-as-default-prop': 'error',
 		'react/no-redundant-should-component-update': 'error',
 		'react/no-render-return-value': 'error',
 		'react/no-set-state': 'off',
@@ -537,6 +539,7 @@ module.exports = {
 		'react/require-render-return': 'error',
 		'react/self-closing-comp': 'error',
 		'react/sort-comp': 'off',
+		'react/sort-default-props': 'off',
 		'react/sort-prop-types': 'off',
 		'react/state-in-constructor': ['error', 'always'],
 		'react/static-property-placement': ['error', 'static public field'],
@@ -629,6 +632,9 @@ module.exports = {
 			},
 		],
 		'vue/custom-event-name-casing': 'off',
+		'vue/define-emits-declaration': 'error',
+		'vue/define-macros-order': 'error',
+		'vue/define-props-declaration': 'error',
 		'vue/first-attribute-linebreak': ['error', {
 			multiline: 'below',
 			singleline: 'ignore',
@@ -655,6 +661,7 @@ module.exports = {
 		'vue/html-self-closing': 'error',
 		'vue/jsx-uses-vars': 'error',
 		'vue/match-component-file-name': 'off',
+		'vue/match-component-import-name': 'error',
 		'vue/max-attributes-per-line': [
 			'error',
 			{
@@ -679,7 +686,6 @@ module.exports = {
 		],
 		'vue/no-child-content': 'error',
 		'vue/no-computed-properties-in-data': 'error',
-		'vue/no-confusing-v-for-v-if': 'off',
 		'vue/no-custom-modifiers-on-v-model': 'error',
 		'vue/no-deprecated-data-object-declaration': 'error',
 		'vue/no-deprecated-destroyed-lifecycle': 'error',
@@ -719,6 +725,8 @@ module.exports = {
 			threshold: 1,
 		}],
 		'vue/no-ref-as-operand': 'error',
+		'vue/no-ref-object-destructure': 'error',
+		'vue/no-required-prop-with-default': 'error',
 		'vue/no-reserved-component-names': 'error',
 		'vue/no-reserved-keys': 'error',
 		'vue/no-reserved-props': 'error',
@@ -727,9 +735,11 @@ module.exports = {
 		'vue/no-restricted-class': 'off',
 		'vue/no-restricted-component-options': 'off',
 		'vue/no-restricted-custom-event': 'off',
+		'vue/no-restricted-html-elements': 'off',
 		'vue/no-restricted-props': 'off',
 		'vue/no-restricted-static-attribute': 'off',
 		'vue/no-restricted-v-bind': ['error', '/^v-/'],
+		'vue/no-root-v-if': 'off',
 		'vue/no-setup-props-destructure': 'error',
 		'vue/no-shared-component-data': 'error',
 		'vue/no-side-effects-in-computed-properties': 'error',
@@ -747,7 +757,6 @@ module.exports = {
 		'vue/no-this-in-before-route-enter': 'error',
 		'vue/no-undef-components': 'off',
 		'vue/no-undef-properties': 'warn',
-		'vue/no-unregistered-components': 'off',
 		'vue/no-unsupported-features': 'off',
 		'vue/no-unused-components': 'warn',
 		'vue/no-unused-properties': ['warn', {
@@ -769,7 +778,11 @@ module.exports = {
 		'vue/one-component-per-file': 'error',
 		'vue/order-in-components': 'error',
 		'vue/padding-line-between-blocks': 'error',
+		'vue/padding-line-between-tags': 'off',
+		'vue/padding-lines-in-component-definition': 'off',
+		'vue/prefer-define-options': 'off',
 		'vue/prefer-import-from-vue': 'error',
+		'vue/prefer-prop-type-boolean-first': 'error',
 		'vue/prefer-separate-static-class': 'error',
 		'vue/prefer-true-attribute-shorthand': 'error',
 		'vue/prop-name-casing': 'error',
@@ -780,6 +793,7 @@ module.exports = {
 		'vue/require-explicit-emits': 'error',
 		'vue/require-expose': 'off',
 		'vue/require-name-property': 'off',
+		'vue/require-prop-comment': 'warn',
 		'vue/require-prop-type-constructor': 'error',
 		'vue/require-prop-types': 'error',
 		'vue/require-render-return': 'error',
@@ -809,10 +823,14 @@ module.exports = {
 			'error',
 			'never',
 		],
+		'vue/v-on-handler-style': 'error',
 		'vue/v-on-style': 'error',
 		'vue/v-slot-style': 'error',
+		'vue/valid-attribute-name': 'error',
 		'vue/valid-define-emits': 'error',
+		'vue/valid-define-options': 'error',
 		'vue/valid-define-props': 'error',
+		'vue/valid-model-definition': 'error',
 		'vue/valid-next-tick': 'error',
 		'vue/valid-template-root': 'error',
 		'vue/valid-v-bind': 'error',
@@ -837,6 +855,7 @@ module.exports = {
 	...Object.fromEntries([
 		'array-bracket-newline',
 		'array-bracket-spacing',
+		'array-element-newline',
 		'arrow-spacing',
 		'block-spacing',
 		'brace-style',
@@ -851,6 +870,7 @@ module.exports = {
 		'key-spacing',
 		'keyword-spacing',
 		'max-len',
+		'multiline-ternary',
 		'no-constant-condition',
 		'no-dupe-keys',
 		'no-empty-pattern',
@@ -879,6 +899,7 @@ module.exports = {
 	// import
 
 	...{
+		'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
 		'import/default': 'error',
 		'import/dynamic-import-chunkname': 'off',
 		'import/export': 'error',
@@ -900,6 +921,7 @@ module.exports = {
 		'import/no-deprecated': 'error',
 		'import/no-duplicates': 'error',
 		'import/no-dynamic-require': 'off',
+		'import/no-empty-named-blocks': 'error',
 		'import/no-extraneous-dependencies': 'error',
 		'import/no-import-module-exports': 'off',
 		'import/no-internal-modules': 'off',
@@ -926,5 +948,11 @@ module.exports = {
 		}],
 		'import/prefer-default-export': 'error',
 		'import/unambiguous': 'off',
+	},
+
+	// sort-keys-fix
+
+	...{
+		'sort-keys-fix/sort-keys-fix': 'off',
 	},
 };
