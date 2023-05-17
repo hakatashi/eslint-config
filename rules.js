@@ -629,7 +629,6 @@ module.exports = {
 			},
 		],
 		'vue/custom-event-name-casing': 'off',
-		'vue/experimental-script-setup-vars': 'error',
 		'vue/first-attribute-linebreak': ['error', {
 			multiline: 'below',
 			singleline: 'ignore',
@@ -669,7 +668,6 @@ module.exports = {
 			'error',
 			'never',
 		],
-		'vue/name-property-casing': 'error',
 		'vue/new-line-between-multi-line-property': 'off',
 		'vue/next-tick-style': 'error',
 		'vue/no-arrow-functions-in-watch': 'error',
