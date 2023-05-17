@@ -6,7 +6,8 @@
   "author": "Koki Takahashi <hakatasiloving@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.18.0"
+    "eslint": "^7.18.0",
+    "snyk": "^1.437.4"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -21,7 +22,6 @@
     "eslint-plugin-private-props": "^0.3.0",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-vue": "^9.0.0",
-    "snyk": "^1.437.4",
     "vue-eslint-parser": "^9.0.1"
   },
   "scripts": {
