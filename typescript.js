@@ -23,7 +23,6 @@ module.exports = {
 		)).map((key) => ({[key]: rules[key]}))),
 		'node/file-extension-in-import': 'off',
 		'import/named': 'off',
-		'import/extensions': 'off',
 		'no-restricted-imports': 'off',
 
 		// https://typescript-eslint.io/rules/no-use-before-define#how-to-use
