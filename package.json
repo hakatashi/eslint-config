@@ -6,7 +6,7 @@
   "author": "Koki Takahashi <hakatasiloving@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "8.46.0"
+    "eslint": "8.51.0"
   },
   "engines": {
     "node": ">=10.0.0"
