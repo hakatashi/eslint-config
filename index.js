@@ -1,21 +1,51 @@
+const js = require('@eslint/js');
+const stylisticJsPlugin = require('@stylistic/eslint-plugin-js');
+const arrayPluralPlugin = require('eslint-plugin-array-plural');
+const importPlugin = require('eslint-plugin-import');
+const nodePlugin = require('eslint-plugin-n');
+const privatePropsPlugin = require('eslint-plugin-private-props');
+const reactPlugin = require('eslint-plugin-react');
+const sortKeysFixPlugin = require('eslint-plugin-sort-keys-fix');
+const vuePlugin = require('eslint-plugin-vue');
+const globals = require('globals');
+const vueEslintParser = require('vue-eslint-parser');
 const rules = require('./rules.js');
 
-module.exports = {
-	parser: 'vue-eslint-parser',
-	env: {
-		browser: true,
-		commonjs: true,
-		es6: true,
-		node: true,
-	},
-	parserOptions: {
-		ecmaVersion: 'latest',
-		ecmaFeatures: {
-			jsx: true,
+/** @type {import('eslint').Linter.Config[]} */
+const configs = [
+	js.configs.recommended,
+	reactPlugin.configs.flat.recommended,
+	...vuePlugin.configs['flat/recommended'],
+	{
+		languageOptions: {
+			parser: vueEslintParser,
+			ecmaVersion: 'latest',
+			sourceType: 'module',
+			parserOptions: {
+				ecmaFeatures: {
+					jsx: true,
+				},
+			},
+			globals: {
+				...globals.browser,
+				...globals.node,
+				...globals.es6,
+				...globals.node,
+			},
 		},
-		sourceType: 'module',
+		plugins: {
+			react: reactPlugin,
+			'array-plural': arrayPluralPlugin,
+			'private-props': privatePropsPlugin,
+			n: nodePlugin,
+			vue: vuePlugin,
+			import: importPlugin,
+			'sort-keys-fix': sortKeysFixPlugin,
+			'@stylistic/js': stylisticJsPlugin,
+		},
+		rules,
 	},
-	plugins: ['react', 'array-plural', 'private-props', 'node', 'vue', 'import', 'sort-keys-fix'],
-	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:vue/recommended'],
-	rules,
-};
+];
+
+module.exports = configs;
+module.exports.default = configs;
