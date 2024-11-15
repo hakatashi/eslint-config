@@ -1,6 +1,6 @@
 {
   "name": "@hakatashi/eslint-config",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "index.js",
   "repository": "https://github.com/hakatashi/eslint-config.git",
   "author": "Koki Takahashi <hakatasiloving@gmail.com>",
