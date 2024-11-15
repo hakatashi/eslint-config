@@ -1,6 +1,5 @@
 const js = require('@eslint/js');
 const stylisticJsPlugin = require('@stylistic/eslint-plugin-js');
-const arrayPlural = require('eslint-plugin-array-plural');
 const importPlugin = require('eslint-plugin-import');
 const node = require('eslint-plugin-n');
 const privateProps = require('eslint-plugin-private-props');
@@ -13,7 +12,6 @@ const rules = require('./rules.js');
 const definedRules = [
 	...Object.entries(js.configs.all.rules).map(([name, rule]) => [name, rule]),
 	...Object.entries(react.rules).map(([name, rule]) => [`react/${name}`, rule]),
-	...Object.entries(arrayPlural.rules).map(([name, rule]) => [`array-plural/${name}`, rule]),
 	...Object.entries(privateProps.rules).map(([name, rule]) => [`private-props/${name}`, rule]),
 	...Object.entries(node.rules).map(([name, rule]) => [`n/${name}`, rule]),
 	...Object.entries(vue.rules).map(([name, rule]) => [`vue/${name}`, rule]),
