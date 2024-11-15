@@ -1,4 +1,4 @@
-/* eslint sort-keys: "off", sort-keys-fix/sort-keys-fix: "error" */
+/* eslint sort-keys-fix/sort-keys-fix: "error" */
 
 const baseConfig = {
 	'accessor-pairs': 'error',
@@ -37,7 +37,7 @@ const baseConfig = {
 	'id-denylist': ['error', 'e'],
 	'id-length': 'off',
 	'id-match': 'error',
-	'init-declarations': 'error',
+	'init-declarations': 'off',
 	'logical-assignment-operators': 'error',
 	'max-classes-per-file': 'off',
 	'max-depth': 'off',
@@ -510,7 +510,7 @@ module.exports = {
 		'react/prefer-exact-props': 'off',
 		'react/prefer-read-only-props': 'off',
 		'react/prefer-stateless-function': 'error',
-		'react/prop-types': 'error',
+		'react/prop-types': 'warn',
 		'react/react-in-jsx-scope': 'off',
 		'react/require-default-props': 'error',
 		'react/require-optimization': 'off',
@@ -523,14 +523,6 @@ module.exports = {
 		'react/static-property-placement': ['error', 'static public field'],
 		'react/style-prop-object': 'error',
 		'react/void-dom-elements-no-children': 'error',
-	},
-
-	// eslint-plugin-array-plural
-
-	...{
-		'array-plural/array-plural': ['error', {
-			allows: ['array', 'list', 'group', 'table'],
-		}],
 	},
 
 	// eslint-plugin-private-props

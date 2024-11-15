@@ -1,7 +1,5 @@
 # @hakatashi/eslint-config
 
-
-
 ## Install
 
     npm install @hakatashi/eslint-config --save-dev
@@ -12,18 +10,19 @@ or
 
 ## Usage
 
-Your `.eslintrc`:
+In your `eslint.config.mjs`:
 
-```json
-{
-	"extends": "@hakatashi"
-}
-```
+```js
+import hakatashi from '@hakatashi/eslint-config';
 
-Or for typescript:
+// Or for typescript
+import hakatashi from '@hakatashi/eslint-config/typescript.js';
 
-```json
-{
-	"extends": "@hakatashi/eslint-config/typescript"
-}
+export default [
+    ...hakatashi,
+
+    {
+        // Your ESLint config
+    },
+];
 ```

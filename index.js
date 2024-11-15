@@ -1,6 +1,5 @@
 const js = require('@eslint/js');
 const stylisticJsPlugin = require('@stylistic/eslint-plugin-js');
-const arrayPluralPlugin = require('eslint-plugin-array-plural');
 const importPlugin = require('eslint-plugin-import');
 const nodePlugin = require('eslint-plugin-n');
 const privatePropsPlugin = require('eslint-plugin-private-props');
@@ -35,7 +34,6 @@ const configs = [
 		},
 		plugins: {
 			react: reactPlugin,
-			'array-plural': arrayPluralPlugin,
 			'private-props': privatePropsPlugin,
 			n: nodePlugin,
 			vue: vuePlugin,
