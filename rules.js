@@ -189,7 +189,7 @@ const baseConfig = {
 	'no-unused-expressions': 'off',
 	'no-unused-labels': 'error',
 	'no-unused-private-class-members': 'error',
-	'no-unused-vars': 'error',
+	'no-unused-vars': ['error', {argsIgnorePattern: '^_'}],
 	'no-use-before-define': 'error',
 	'no-useless-assignment': 'error',
 	'no-useless-backreference': 'error',

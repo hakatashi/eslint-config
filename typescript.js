@@ -46,7 +46,7 @@ const configs = typescriptEslint.config(
 
 			// https://typescript-eslint.io/rules/no-unused-vars/#options
 			'no-unused-vars': 'off',
-			'@typescript-eslint/no-unused-vars': 'error',
+			'@typescript-eslint/no-unused-vars': ['error', {argsIgnorePattern: '^_'}],
 
 			'@typescript-eslint/no-non-null-assertion': 'warn',
 		},
