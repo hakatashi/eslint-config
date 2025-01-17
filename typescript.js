@@ -48,6 +48,9 @@ const configs = typescriptEslint.config(
 			'no-unused-vars': 'off',
 			'@typescript-eslint/no-unused-vars': ['error', {argsIgnorePattern: '^_'}],
 
+			// Allow method overloading
+			'no-dupe-class-members': 'off',
+
 			'@typescript-eslint/no-non-null-assertion': 'warn',
 		},
 		settings: {
